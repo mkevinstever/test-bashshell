@@ -3,7 +3,6 @@ from concurrent.futures import ThreadPoolExecutor
 
 CONFIG_PATH = './config'
 
-
 def multi_accounts_task(fn):
     configs = []
     try:
