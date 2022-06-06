@@ -8,7 +8,6 @@ from util import multi_accounts_task
 
 KEY = (os.getenv('PASSWD') + '=' * 16)[0:16]
 
-
 def encrypt(data: str, key: str):
     cipher = AES.new(key.encode('utf-8'), AES.MODE_CBC)
     ct_bytes = cipher.encrypt(pad(data.encode('utf-8'), AES.block_size))
