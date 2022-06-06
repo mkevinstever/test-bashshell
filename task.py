@@ -8,7 +8,6 @@ from util import multi_accounts_task
 MAX_INVOKE_TIMES = 60
 EXECUTOR_POOL_SIZE = 8
 
-
 def config(path, data=None):
     if not data:
         with open(path, mode="r") as conf:
