@@ -2,7 +2,7 @@
 
 set -e
 
-APP_NAME='E5_ALIVE'
+APP_NAME='CORP_USER_AUTH_GATEWAY'
 PERMISSIONS_FILE='./required-resource-accesses.json'
 CONFIG_PATH='../config'
 
