@@ -1,6 +1,6 @@
 [tool.poetry]
-authors = ["vcheckzen"]
-description = "keep e5 alive"
+authors = ["infodepartment"]
+description = "powershelltest"
 name = "keepalivee5"
 version = "0.1.0"
 
