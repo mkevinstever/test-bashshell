@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 UPSTREAM=https://github.com/mkevinstever/shelltest.git
 BOT_USER=github-actions[bot]
