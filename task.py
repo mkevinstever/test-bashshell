@@ -75,7 +75,7 @@ def invoke_api(path):
         'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',
         'https://graph.microsoft.com/v1.0/me/messages',
         "https://graph.microsoft.com/v1.0/me/messages?$filter=importance eq 'high'",
-        'https://graph.microsoft.com/v1.0/me/messages?$search="hello world"',
+        'https://graph.microsoft.com/v1.0/me/messages?$search="member"',
         'https://graph.microsoft.com/beta/me/messages?$select=internetMessageHeaders&$top',
     ]
     headers = {'Authorization': f'Bearer {access_token}'}
