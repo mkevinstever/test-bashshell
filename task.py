@@ -5,8 +5,8 @@ import requests
 from concurrent.futures import ThreadPoolExecutor
 from util import multi_accounts_task
 
-MAX_INVOKE_TIMES = 90
-EXECUTOR_POOL_SIZE = 8
+MAX_INVOKE_TIMES = 60
+EXECUTOR_POOL_SIZE = 10
 
 def config(path, data=None):
     if not data:
@@ -75,7 +75,7 @@ def invoke_api(path):
         'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',
         'https://graph.microsoft.com/v1.0/me/messages',
         "https://graph.microsoft.com/v1.0/me/messages?$filter=importance eq 'high'",
-        'https://graph.microsoft.com/v1.0/me/messages?$search="user"',
+        'https://graph.microsoft.com/v1.0/me/messages?$search="user1001"',
         'https://graph.microsoft.com/beta/me/messages?$select=internetMessageHeaders&$top',
     ]
     headers = {'Authorization': f'Bearer {access_token}'}
