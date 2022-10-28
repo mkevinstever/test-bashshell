@@ -8,21 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: master
           token: ${{ secrets.PAT }}
 
       - name: Setup python and poetry
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.9
       - uses: Gr1N/setup-poetry@v7
 
       - name: Setup nodejs
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 18
 
       - name: Pull upstream
         run: bash wrapper.sh pull "sync"
