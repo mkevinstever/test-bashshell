@@ -34,3 +34,9 @@ jobs:
 
       - name: Commit and push
         run: bash wrapper.sh push "update app config"
+      
+      - name: Delete workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+         retain_days: 1
+         keep_minimum_runs: 3
