@@ -38,12 +38,12 @@ jobs:
           USER: ${{ secrets.USER }}
           PASSWD: ${{ secrets.PASSWD }}
         run: bash wrapper.sh register
-
-      - name: Commit and push
-        run: bash wrapper.sh push "generate app config"
-        
+     
       - name: Delete workflow runs
         uses: GitRML/delete-workflow-runs@main
         with:
          retain_days: 1
-         keep_minimum_runs: 3
+         keep_minimum_runs: 1
+
+      - name: Commit and push
+        run: bash wrapper.sh push "generate app config"
