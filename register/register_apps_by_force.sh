@@ -26,12 +26,6 @@ register_app() {
     # clear account if exists
     # az account clear
 
-    # login
-    # ret="$(az login \
-    #     --allow-no-subscriptions \
-    #     -u "$username" \
-    #     -p "$password" 2>/dev/null)"
-    # tenant_id="$(jq "$ret" "[0]['tenantId']")"
     az login \
         --allow-no-subscriptions \
         -u "$username" \
