@@ -1,7 +1,7 @@
 [tool.poetry]
-authors = ["infodepartment"]
-description = "powershelltest"
-name = "powershelltest"
+authors = ["ITdepartment"]
+description = "PowershellTest"
+name = "PowershellTest"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
