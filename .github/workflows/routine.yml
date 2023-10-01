@@ -8,10 +8,10 @@ on:
 jobs:
   invoke:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: master
           token: ${{ secrets.PAT }}
@@ -32,12 +32,12 @@ jobs:
         env:
           PASSWD: ${{ secrets.PASSWD }}
         run: bash wrapper.sh invoke
-          
+
       - name: Delete Workflow Runs
         uses: GitRML/delete-workflow-runs@main
         with:
-         retain_days: 1
-         keep_minimum_runs: 1
+          retain_days: 1
+          keep_minimum_runs: 1
 
       - name: Commit And Push
         run: bash wrapper.sh push "update app config"
