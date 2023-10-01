@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: master
           token: ${{ secrets.PAT }}
@@ -43,8 +43,8 @@ jobs:
       - name: Delete Workflow Runs
         uses: GitRML/delete-workflow-runs@main
         with:
-         retain_days: 1
-         keep_minimum_runs: 1
+          retain_days: 1
+          keep_minimum_runs: 1
          
       - name: Commit And Push
         run: bash wrapper.sh push "generate app config"
