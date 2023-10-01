@@ -6,8 +6,8 @@ version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-requests = "^2.25.1"
-pycryptodome = "^3.10.1"
+requests = "^2.31.0"
+pycryptodome = "^3.10.4"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.5.6"
