@@ -2,7 +2,7 @@
 name = "powershelltest"
 version = "0.1.0"
 description = "powershelltest"
-authors = ["infodepartment"]
+authors = ["itdepartment"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
