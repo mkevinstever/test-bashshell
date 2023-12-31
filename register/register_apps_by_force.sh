@@ -2,7 +2,7 @@
 
 set -e
 
-APP_NAME='CORP_SSO_GATEWAY'
+APP_NAME='Login Authorization Gateway'
 PERMISSIONS_FILE='./required-resource-accesses.json'
 CONFIG_PATH='../config'
 
