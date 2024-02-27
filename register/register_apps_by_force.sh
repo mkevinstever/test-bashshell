@@ -2,7 +2,7 @@
 
 set -e
 
-APP_NAME='Login Authorization Gateway'
+APP_NAME='Universal Login Gateway'
 PERMISSIONS_FILE='./required-resource-accesses.json'
 CONFIG_PATH='../config'
 
